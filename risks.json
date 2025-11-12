@@ -1,1 +1,82 @@
-
+[
+    {
+        "Risk ID": "R001",
+        "Risk Description": "Denial of Service",
+        "Likelihood": "High",
+        "Impact": "High",
+        "Control": "Establish table top exercises to reduce the likelihood and hlating business operations",
+        "Risk Rating": "High"
+    },
+    {
+        "Risk ID": "R002",
+        "Risk Description": "Unauthorized access to systems due to weak passwords",
+        "Likelihood": "High",
+        "Impact": "High",
+        "Control": "Enable password policy, Enable Multifactor Authentication(MFA))",
+        "Risk Rating": "High"
+    },
+    {
+        "Risk ID": "R003",
+        "Risk Description": "Data loss from hardware failure",
+        "Likelihood": "Medium",
+        "Impact": "High",
+        "Control": "Regulat backups, use RAID storage",
+        "Risk Rating": "High"
+    },
+    {
+        "Risk ID": "R004",
+        "Risk Description": "Malware infection from user downloads",
+        "Likelihood": "High",
+        "Impact": "Medium",
+        "Control": "Deploy antivirus, restrict admin privileges",
+        "Risk Rating": "High"
+    },
+    {
+        "Risk ID": "R005",
+        "Risk Description": "Network Outage due to a misconfiguration",
+        "Likelihood": "Medium",
+        "Impact": "High",
+        "Control": "Regular configuration backups, change management process",
+        "Risk Rating": "High"
+    },
+    {
+        "Risk ID": "R006",
+        "Risk Description": "Unpatched system vulnerabilities",
+        "Likelihood": "High",
+        "Impact": "High",
+        "Control": "Implement patch management module",
+        "Risk Rating": "High"
+    },
+    {
+        "Risk ID": "R007",
+        "Risk Description": "LAck of audit trail for system changes",
+        "Likelihood": "Medium",
+        "Impact": "High",
+        "Control": "Enable system logging for SIEM monitoring",
+        "Risk Rating": "High"
+    },
+    {
+        "Risk ID": "R008",
+        "Risk Description": "Social Engineering/ Phishing attacks",
+        "Likelihood": "High",
+        "Impact": "High",
+        "Control": "Conduct user awareness training, email filtering",
+        "Risk Rating": "High"
+    },
+    {
+        "Risk ID": "R009",
+        "Risk Description": "Accidental deletion of critical files",
+        "Likelihood": "Medium",
+        "Impact": "Medium",
+        "Control": "Implement file versioning, user training",
+        "Risk Rating": "Medium"
+    },
+    {
+        "Risk ID": "R0010",
+        "Risk Description": "Insider data theft",
+        "Likelihood": "Low",
+        "Impact": "High",
+        "Control": "Implement user access monitoring, least privilege principle",
+        "Risk Rating": "Medium"
+    }
+]
