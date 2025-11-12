@@ -1,4 +1,4 @@
-# 🧾 IT Risk Assessment Template (Flask App)
+# 🧾 IT Risk Assessment Template
 
 A simple IT Risk Assessment Web Application built using Python Flask.  
 This project helps users (especially IT auditors and cybersecurity professionals) identify, record, and evaluate IT risks based on **Likelihood**, **Impact**, and **Control Measures**.
