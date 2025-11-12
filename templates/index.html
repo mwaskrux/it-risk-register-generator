@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Risk Assessment Template</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h2>Risk Assessment Dashboard</h2>
+
+<form method="POST" action="/">
+    <input type="text" name="risk_id" placeholder="Risk ID" required>
+    <input type="text" name="risk_description" placeholder="Risk Description" required>
+    <select name="likelihood" required>
+        <option value="">Likelihood</option>
+        <option>Low</option><option>Medium</option><option>High</option>
+    </select>
+    <select name="impact" required>
+        <option value="">Impact</option>
+        <option>Low</option><option>Medium</option><option>High</option>
+    </select>
+    <input type="text" name="control" placeholder="Control" required>
+    <button type="submit">Add Risk</button>
+</form>
+
+<hr>
+
+<table>
+    <thead>
+        <tr>
+            <th>Risk ID</th><th>Description</th><th>Likelihood</th><th>Impact</th><th>Control</th><th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for risk in risks %}
+        <tr class="{{ risk['Risk Rating']|lower }}">
+            <td>{{ risk["Risk ID"] }}</td>
+            <td>{{ risk["Risk Description"] }}</td>
+            <td>{{ risk["Likelihood"] }}</td>
+            <td>{{ risk["Impact"] }}</td>
+            <td>{{ risk["Control"] }}</td>
+            <td>{{ risk["Risk Rating"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="export-buttons">
+    <a href="/export_excel">📊 Export to Excel</a>
+    <a href="/export_pdf">📄 Export to PDF</a>
+</div>
+
+</body>
+</html>
 
